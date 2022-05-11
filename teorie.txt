@@ -1,0 +1,40 @@
+asynchronous este cand ceva se intampla dar tu nu vrei sa astepti pana cand acest lucru este facut pentru a vă continua programul în timp ce se întâmplă.
+facem un request catre un server si astept cateva sec ca sa primesc data inapoi si nu vreau ca programu 
+async await are de a face cu promise dar in alt mod cu un response
+
+make this getpost this callback, run after this is pushed not waiting 4 seconds for entire function 
+asteptam 4 secunde dupa care apare afisarea deoarece asteptam sa se creeze postarea cu createpost inainte, actual apelacallback
+a trebuit să aștepte 4 sec să creeze postarea înainte de a apela efectiv apelul invers
+
+
+
+
+
+
+
+-------------------------
+
+ 
+Promise -> resolve cand vreau sa rezolv o problema cu succes apelam resolve;
+Promise -> reject cand ceva nu merge bine in leg cu problema apelam reject;
+
+if (!error) {
+    resolve();
+  } else {
+    reject();
+  }
+
+  -> caand vreau sa rezolv promisiunea 
+
+  basically its waiting its gonna setting the timeout and then as soon its done its gonna resolve once its resolve then call the getpost
+
+  fetch api to make ajax calls or a http request which return a promise
+  fetch - need 2 thens 
+  a) first need to format it usually to json
+  b) and then will actually give me a data
+
+  If the longest promise takes 6 seconds, the Promise.all will take for 6 seconds then return all values/responses
+
+
+
+  async await its a way to handle response
